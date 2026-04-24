@@ -4,10 +4,10 @@ Bu repository-də Airbnb listings dataseti üzərində MySQL istifadə edərək 
 -- 1. Hər bir "neighbourhood_group_cleansed" və "room_type" üçün "price" sütununun cəmini tapın.
 <details>
   <summary>Həlli gör</summary>
-
 ```select neighbourhood_group_cleansed,room_type,sum(price) as sum_price
 from airbnb_listings
-group by 1,2;
+group by 1,2;```
+  
 -- 2. Hər bir "property_type" və "room_type" üçün unikal "neighbourhood" dəyərlərinin sayını tapın.
 select property_type,room_type,count(distinct neighbourhood) as count_neighbourhood
 from airbnb_listings
