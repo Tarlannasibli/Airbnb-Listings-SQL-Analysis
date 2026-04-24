@@ -1,17 +1,26 @@
 # Airbnb-Listings-SQL-Analysis
 Bu repository-də Airbnb listings dataseti üzərində MySQL istifadə edərək etdiyim analiz tapşırıqları yerləşir.
 [SQL task  (Tərlan N.) 20260424.sql](https://github.com/user-attachments/files/27061892/SQL.task.T.rlan.N.20260424.sql)
+
 -- 1. Hər bir "neighbourhood_group_cleansed" və "room_type" üçün "price" sütununun cəmini tapın.
 <details>
   <summary>Həlli gör</summary>
-```select neighbourhood_group_cleansed,room_type,sum(price) as sum_price
-from airbnb_listings
-group by 1,2;```
+select neighbourhood_group_cleansed,room_type,sum(price) as sum_price
   
--- 2. Hər bir "property_type" və "room_type" üçün unikal "neighbourhood" dəyərlərinin sayını tapın.
-select property_type,room_type,count(distinct neighbourhood) as count_neighbourhood
 from airbnb_listings
+
 group by 1,2;
+
+-- 2. Hər bir "property_type" və "room_type" üçün unikal "neighbourhood" dəyərlərinin sayını tapın.
+  <details>
+  <summary>Həlli gör</summary>
+
+select property_type,room_type,count(distinct neighbourhood) as count_neighbourhood
+
+from airbnb_listings
+
+group by 1,2;
+
 -- 3. Hər bir "neighbourhood" və "room_type" üçün "price" sütununun orta qiymətini tapın.
 select neighbourhood,room_type,round(avg(price),1) as avg_price
 from airbnb_listings 
