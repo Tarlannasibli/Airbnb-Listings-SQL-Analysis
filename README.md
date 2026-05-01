@@ -1,6 +1,9 @@
 # Airbnb-Listings-SQL-Analysis
+
 Bu repository-də Airbnb listings dataseti üzərində MySQL istifadə edərək etdiyim analiz tapşırıqları yerləşir.
+
 [SQL task  (Tərlan N.) 20260424.sql](https://github.com/user-attachments/files/27061892/SQL.task.T.rlan.N.20260424.sql)
+
 📊 Analiz zamanı cavablandırılan əsas suallar:
 
 Qiymət Analizi: Fərqli otaq növləri (room_type) və qonşuluq əraziləri üzrə orta, maksimum və minimum qiymət trendlərinin müəyyənləşdirilməsi.
